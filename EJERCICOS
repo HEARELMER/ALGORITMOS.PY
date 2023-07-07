@@ -1,0 +1,113 @@
+"""
+(5) Pide dos números. Si el primero es más grande que el segundo, muestre primero el
+segundo número y luego el primero, de lo contrario, muestre primero el primer número y
+luego el segundo.
+
+(6) Pida al usuario que ingrese un número menor a 20. Si ingresa un número mayor a 20,
+muestre el mensaje "Demasiado alto", de lo contrario, muestre "Gracias".
+
+(7) Pida al usuario que ingrese un número entre 10 y 20 (inclusivo). Si ingresa un número
+dentro de este rango, muestra el mensaje “Gracias”, de lo contrario muestra el mensaje
+“Respuesta incorrecta”.
+
+(8) Pida al usuario que introduzca su color favorito. Si ingresan “rojo”, “ROJO” o “Rojo”
+mostrar el mensaje “También me gusta el rojo”, de lo contrario mostrar el mensaje “No me
+gusta [color], prefiero el rojo”.
+
+(9) Pregunta al usuario si está lloviendo y convierte su respuesta a minúsculas para que no
+importe en qué caso lo escriba. Si responde "sí", pregunta si hace viento. Si responde “sí”
+a esta segunda pregunta, muestre la respuesta “Hace demasiado viento para un
+paraguas”, de lo contrario muestre el mensaje “Tome un paraguas”. Si no respondieron
+que sí a la primera pregunta, mostrar la respuesta “Disfruta tu día”.
+
+(10) Preguntar la edad del usuario. Si tienen 18 años o más mostrar el mensaje “Puedes
+votar”, si tienen 17 años mostrar el mensaje “Puedes aprender a conducir”, si tienen 16
+años mostrar el mensaje “Puedes comprar un billete de lotería”, si son menores de 16
+años, mostrar el mensaje "Puedes ir a Trickor-Treating".
+
+(11) Pídele al usuario que ingrese 1, 2 o 3. Si ingresa un 1, muestra el mensaje "Gracias",
+si ingresa un 2, muestra "Bien hecho", si ingresa un 3, muestra "Correcto". Si ingresan algo
+más, muestra "Mensaje de error".
+
+(12) Pida al usuario que introduzca un número. Si es inferior a 10, muestra el mensaje
+"Demasiado bajo", si su número está entre 10 y 20, muestra "Correcto", de lo contrario,
+muestra "Demasiado alto".
+
+(13) Escriba un código que le pida al usuario que ingrese una puntuación numérica (0-
+100). En respuesta, debe imprimir el puntaje y la letra de calificación correspondiente, de
+acuerdo con la tabla a continuación.
+Puntaje Calificación
+
+>= 90 A
+[80-90) B
+[70-80) C
+[60-70) D
+< 60 F
+
+Los corchetes y corchetes denotan intervalos cerrados y abiertos. Un intervalo cerrado
+incluye el número y un intervalo abierto lo excluye. Entonces 79.99999 obtiene la
+calificación C, pero 80 obtiene la calificación B.
+
+(14) Un año es bisiesto si es divisible por 4; sin embargo, si el año puede dividirse por
+100, NO es un año bisiesto, a menos que el año también sea divisible por 400, entonces
+es un año bisiesto. Escriba un código que le pida al usuario que ingrese un año y genere
+True si es un año bisiesto, o False en caso contrario. Usar sentencias if.
+Año ¿Salto?
+
+1944 Verdadero
+2011 FALSO
+1986 FALSO
+1800 FALSO
+1900 FALSO
+2000 Verdadero
+2056 Verdadero
+
+Arriba hay algunos ejemplos de lo que debería ser la salida para varias entradas.
+
+(15) Proporcione los opuestos lógicos de estas condiciones, es decir, una expresión que
+produzca Falso siempre que esta expresión produzca Verdadero, y viceversa. No se le
+permite utilizar el operador not.
+1. a > b
+2. a >= b
+3. a >= 18 and día == 3
+4. a >= 18 or día != 3
+(16) Se proporcionan las longitudes de dos lados de un triángulo rectángulo. Asigne la
+longitud de la hipotenusa a la variable hipo_long. (Sugerencia: sqrt o x ** 0.5 devolverá la
+raíz cuadrada o la usará desde el módulo matemático)
+
+(17) Se proporciona una lista de números. Para cada uno de los números de la lista,
+determine si son impares. Si el número es impar, agréguelo True a una nueva lista llamada
+es_impar. Si el número es par, entonces suma False.
+
+(18) Dadas las longitudes de los tres lados de un triángulo, determine si el triángulo tiene
+un ángulo recto. Si es así, asigne True a la variable es_rectangulo. Si no es así, entonces
+asigne Falsea la variable es_rectangulo.
+Sugerencia: la aritmética de coma flotante no siempre es exactamente precisa, por lo que
+no es seguro probar la igualdad de los números de coma flotante. Si un buen programador
+quiere saber si x es igual o lo suficientemente cercano a y, probablemente lo codificaría
+como
+if abs(x - y) < 0.001: # si x es aproximadamente igual a y
+
+(19) Implementar la calculadora para la fecha de Semana Santa.
+El siguiente algoritmo calcula la fecha del Domingo de Pascua para cualquier año entre
+1900 y 2099.
+Pida al usuario que introduzca un año. Calcula lo siguiente:
+1. a = año % 19
+2. b = año % 4
+3. c = año % 7
+4. d = (19 * a + 24) % 30
+5. mi = (2 * segundo + 4 * c + 6 * re + 5) % 7
+6. fecha de pascua = 22 + d + e
+Nota especial: el algoritmo puede dar una fecha en abril. Sabrá que la fecha es en abril si
+el cálculo le da una respuesta mayor que 31. (Deberá ajustar) Además, si el año es uno de
+los cuatro años especiales (1954, 1981, 2049 o 2076), entonces réstale 7 a la fecha.
+Su programa debe imprimir un mensaje de error si el usuario proporciona una fecha que
+está fuera de rango.
+
+(20) rainfall_mi es una cadena que contiene el número promedio de pulgadas de lluvia
+en Michigan para cada mes (en pulgadas) con cada mes separado por una coma. Escriba
+un código para calcular la cantidad de meses que tienen más de 3 pulgadas de lluvia.
+
+Almacene el resultado en la variable num_rainy_months. En otras palabras, cuente la
+cantidad de elementos con valores.> 3.0
+rainfall_mi = "1.65, 1.46, 2.05, 3.03, 3.35, 3.46, 2.83, 3.23, 3.5, 2.52, 2.8, 1.85"""
