@@ -162,7 +162,7 @@ else:
 acuerdo con la tabla a continuación."""
 
 puntuacion=int(input("Ingresa una puntuación (0-100): "))
-
+#en esta parte no es necesario el AND puedes corregir
 if puntuacion >=90 and puntuacion <=100:
     print( puntuacion, "A")
 
